@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title>example 8</title>
+    </head>
+<body>
+<canvas id="canvas1" width="800" height="800" style="border:3px solid red;background-color:bisque">
+</canvas>
+    
+<script>
+var canvas = document.getElementById("canvas1");
+ctx = canvas.getContext("2d");
+  
+ctx.fillStyle = "blue";
+   // επάνω αριστερά 
+ctx.fillRect(0,0,200,150);  
+  // κάτω αριστερά 
+ctx.fillRect(0,650,200,150);  
+// κάτω δεξιά
+ctx.fillRect(600,650,200,150); 
+   // επάνω δεξιά
+ctx.fillRect(600,0,200,150);     
+    
+ctx.strokeStyle="green";
+ctx.strokeRect(300,650,250,150);   
+</script>   
+</body>
+</html>

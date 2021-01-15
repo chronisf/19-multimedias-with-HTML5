@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title>example 10</title>
+    </head>
+<body>
+    
+<canvas id="canvas1" width="800" height="800" style="border:3px solid green" >
+</canvas>
+    
+<script>
+var canvas = document.getElementById("canvas1");
+ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle = "blue";
+ctx.lineWidth=5;
+ctx.arc(50,50,50,0,2*Math.PI);    
+ctx.stroke();
+    
+    
+    
+ctx.beginPath();
+ctx.fillStyle = "yellow";
+ctx.lineWidth=5;
+ctx.arc(50,750,50,0,2*Math.PI);    
+ctx.fill();    
+
+    
+ctx.beginPath();
+ctx.fillStyle = "green";
+ctx.lineWidth=5;
+ctx.arc(750,750,50,0,2*Math.PI);    
+ctx.fill();       
+    
+    
+ctx.beginPath();
+ctx.fillStyle = "pink";
+ctx.lineWidth=5;
+ctx.arc(750,50,50,0,2*Math.PI);    
+ctx.fill();       
+   
+
+ctx.beginPath();
+ctx.strokeStyle = "blue";
+ctx.lineWidth=5;
+ctx.arc(0,800,800,1.5*Math.PI,0,false) ;    
+ctx.stroke();  
+
+   
+</script>
+    
+</body>
+</html>

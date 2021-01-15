@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title>example 18</title>
+    </head>
+<body>    
+<canvas id="canvas1" width="600" height="600" style="border:3px solid blue;">
+</canvas>
+<br>    
+    
+<canvas id="canvas2" width="600" height="600" style="border:3px solid red;">
+</canvas>    
+    
+<script>
+var canvas = document.getElementById("canvas1");
+ctx = canvas.getContext("2d");
+ctx.fillStyle="yellow";
+ctx.fillRect(100,100,150,100);  
+
+ctx.setTransform(1,1,-0.2,1,50,60);
+ctx.fillStyle="red";
+ctx.fillRect(100,100,150,100);    
+        
+    
+ctx.setTransform(1,1,-0.2,1,50,60);
+ctx.fillStyle="green";
+ctx.fillRect(100,100,150,100);    
+</script>    
+    
+    
+<script>
+var canvas = document.getElementById("canvas2");
+ctx = canvas.getContext("2d");
+
+    
+ctx.fillStyle="yellow";
+ctx.fillRect(100,100,150,100);  
+
+ctx.setTransform(1,1,-0.2,1,50,60);
+ctx.fillStyle="green";
+ctx.fillRect(100,100,150,100);    
+        
+    
+
+ctx.setTransform(1,1,-0.2,1,50,60);
+ctx.fillStyle="red";
+ctx.fillRect(100,100,150,100);    
+    
+
+    
+</script>      
+    
+    
+</body>
+</html>

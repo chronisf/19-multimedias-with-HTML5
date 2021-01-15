@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title>example 17</title>
+    </head>
+<body>
+    
+    
+    
+    
+<canvas id="canvas1" width="800" height="800" style="border:3px solid blue;">
+</canvas>
+<br>    
+    
+ 
+    
+    
+<script>
+var canvas = document.getElementById("canvas1");
+ctx = canvas.getContext("2d");
+
+    
+ctx.fillStyle="yellow";
+ctx.fillRect(100,100,150,100);  
+
+ctx.transform(1,1,-0.2,1,50,60);
+ctx.fillStyle="red";
+ctx.fillRect(100,100,150,100);    
+        
+    
+
+ctx.transform(1,1,-0.2,1,50,60);
+ctx.fillStyle="green";
+ctx.fillRect(100,100,150,100);    
+    
+    
+</script>    
+    
+    
+
+    
+</body>
+</html>

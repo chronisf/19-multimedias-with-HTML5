@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title>example 16</title>
+    </head>
+<body>
+    
+    
+    
+    
+<canvas id="canvas1" width="800" height="800" style="border:3px solid red;">
+</canvas>
+    
+    
+<script>
+var canvas = document.getElementById("canvas1");
+ctx = canvas.getContext("2d");
+ctx.fillStyle="orange";
+ctx.fillRect(0,0,400,200);  
+ctx.fillStyle="yellow";
+ctx.translate(400,600);
+ctx.fillRect(0,0,400,200);    
+</script>    
+    
+</body>
+</html>
